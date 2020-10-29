@@ -6,7 +6,7 @@ while True:
     try:
     	s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 	Bytes=send_string.encode(encoding="latin1")
-	s.connect(("192.168.x.x",9999))#Bağlantı bilgilerini keendinize göre düzenleyin.
+	s.connect(("192.168.x.x",9999))#Baglanti bilgilerini kendinize gore duzenleyin.
 	s.send(Bytes)
 	s.close()
 	send_string=send_string + "A" *100
